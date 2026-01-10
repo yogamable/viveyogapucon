@@ -1,0 +1,153 @@
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem 0 2rem;
+    
+    .nav-logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        
+        .logo{
+            height: 8rem;
+        }
+    }
+
+    .nav-menu{
+        display: flex;
+        justify-items: center;
+        align-items: end;
+    }
+
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background-color: white;
+
+    .navbar-nav{
+        @media screen and (min-width: 481px) and (max-width: 768px){
+            gap: 0;
+        }
+    }
+}
+
+.prop-scroll{
+    scroll-margin-top: 14rem;
+}
+
+.carousel-item{
+    height: 30rem;
+
+    img{
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @media screen and (max-width: 990px) {
+        height: 25rem;
+    }
+    @media screen and (max-width: 768px) {
+        height: 20rem;
+    }
+}
+
+.div-subtitulos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-cajas{
+    padding: 3rem 3rem;
+}
+
+.caja-1{
+    background-color: $color-tres;
+
+}
+
+.caja-2{
+    background-color: $color-tres;
+}
+
+.card-img-custom {
+  height: 8rem;
+  object-fit: cover;
+}
+
+.div-pack{
+    background-color: $color-tres;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.div-contacto{
+    padding: 3rem 3rem;
+}
+
+.caja-formulario{
+    border: solid 1px $color-ocho;
+    border-radius: 1rem;
+    padding: 3rem;
+}
+
+.boton-inscribirme{
+    background-color: $color-seis;
+    color: white;
+    border: 1px solid $color-seis;
+}
+
+.footer{
+    background-color: $color-uno;
+    
+    .footer-1{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: .2rem;
+    
+        a{
+            text-decoration: none;
+        }
+    
+    }
+    .footer-2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    .footer-3{
+        display: flex;
+        align-content: center;
+        justify-content: end;
+        
+        img{
+            max-width: fit-content;
+            height: 10rem;
+            object-fit: contain;
+        }
+    }
+}
+
+.img-card-modal{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  @media screen and (max-width: 600px){
+    height: 10rem;
+    object-position: top;
+  }
+}
+
+
+
+

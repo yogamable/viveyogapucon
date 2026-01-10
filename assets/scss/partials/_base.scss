@@ -1,0 +1,402 @@
+.menu-1{
+  .navbar-1{
+    gap: 1rem;
+    
+    @media screen and (max-width: 810px){
+      gap: .5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .nav-link{
+      font-family: $fuente-open;
+      color: $color-uno !important;
+    }
+    .nav-link:hover{
+      color: $color-ocho !important;
+    }
+    
+    .span-menu{
+      display: flex;
+      align-self: center;
+      color: $color-uno;
+    }
+  }
+}
+
+.nav-menu-1, .menu-1, .menu-1-btn{
+  @media screen and (max-width: 768px){
+    display: none;
+    padding: 0;
+    margin: 0;
+    }
+}
+
+.nav-menu-2, .menu-2, .menu-2-btn, .offcanvas-1{
+  display: none;
+
+  @media screen and (max-width: 767px){
+    display: flex;
+   }
+}
+
+.titulo-logo{
+  background-color: transparent;
+}
+
+.logo{
+  @media screen and (max-width: 412) and (min-width: 600px) {
+      font-size: 1rem;
+    }
+
+}
+
+.div-titulo-texto{
+  @media screen and (min-width: 450px) and (max-width: 1030px){
+    text-align: end;
+    display: flex;
+    justify-content: right;
+  }
+}
+
+.titulo-texto{
+  font-family: $fuente-reeanie;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: $color-uno;
+  background-color: transparent;
+  text-decoration: none;
+
+  @media screen and (max-width: 1030px){
+    line-height: 1.8rem;
+  }
+
+  @media screen and (max-width: 1052px) and (min-width: 850px) {
+    margin-left: 12rem;
+  }
+  @media screen and (max-width: 849px) and (min-width: 780px) {
+    margin-left: 8rem;
+  }
+  @media screen and (max-width: 781px) and (min-width: 600px) {
+    margin-left: 2rem;
+    text-align: end;
+  }
+}
+
+.carousel-titulo{
+  font-family: $fuente-antonio;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2rem;
+
+  @media  screen and (max-width: 768px) {
+    font-size: 1.8rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }  
+}
+
+.carousel-parrafo{
+    font-weight: 200;
+    font-size: 1.8rem;
+    color: white;
+    line-height: 1.5rem;
+
+  @media  screen and (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+}
+
+.div-subtitulos a{
+  font-family: $fuente-open;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-uno;
+  background-color: transparent;
+}
+
+.btn-close{
+  color: white;
+}
+
+.div-subtitulos a:hover{
+  color: $color-dos;
+}
+
+.bi-hand-index-thumb{
+  font-size: 1rem;
+  transform: rotate(3.142rad);
+
+}
+.subtitulos{
+  font-family: $fuente-antonio;
+  font-size: 3rem;
+  color: $color-ocho;
+}
+
+.divs-horarios{
+  @media screen and (max-width: 656px){
+      padding: 0;
+      margin: 0;
+    }
+
+  p{
+    font-family: $fuente-antonio;
+    font-size: 1.5rem;
+  
+    @media screen and (max-width: 1220px){
+      font-size: 1rem;
+    }
+    @media screen and (max-width: 560px){
+      
+      font-weight: 200;
+    }
+  }
+}
+
+.nivel-suave{
+  background-color: $color-cinco;
+  p{
+    color: white;
+  }
+}
+.nivel-intermedio{
+  background-color: $color-uno;
+  p{
+    color: white;
+  }
+}
+.nivel-avanzado{
+  background-color: $color-ocho;
+  p{
+    color: white;
+  }
+}
+
+.dia-semana{
+  font-family: $fuente-antonio;
+  font-size: 2rem;
+  color: $color-ocho;
+
+  @media screen and (max-width: 1220px) {
+    font-size: 1.2rem;
+  }
+  @media screen and (max-width: 560px){
+    font-size: 1rem;
+    font-weight: 200;
+  }
+
+  
+}
+
+.hora-semana{
+  color: $color-ocho;
+
+  @media screen and (max-width: 1220px) and (min-width:1176) {
+    font-size: 1.2rem;
+  }
+  @media screen and (max-width: 652px){
+    font-size: 1rem;
+  }
+}
+
+.card-texto{
+  font-family: $fuente-antonio;
+  font-size: 1.5rem;
+  text-align: center;
+
+  @media screen and (max-width: 1220px) and (min-width:1176) {
+    font-size: 1.2rem;
+  }
+}
+
+.card-texto-2{
+  @media screen and (max-width: 679px) {
+    padding-top: 1rem;
+  }
+}
+
+.card-descripcion{
+  font-family: $fuente-open;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1rem;
+  
+  small{
+    font-size: .8rem;
+  }
+}
+
+.boton-inscribirme{
+  font-family: $fuente-antonio;
+  font-size: 1.5rem;
+}
+
+.footer-1{
+  a, i{
+    font-family: $fuente-open;
+    font-weight: 200;
+    color: white;
+    background-color: transparent;
+    font-size: 1rem;
+
+    @media screen and (max-width: 560px) {
+      font-size: .9rem;
+    }
+  }
+
+  a:hover{
+  color: $color-tres !important;
+  }
+
+  i:hover{
+  color: $color-tres !important;
+  }
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+.footer-2{
+  h5{
+    font-family: $fuente-reeanie;
+    font-size: 2.5rem;
+    color: white;
+  }
+}
+
+.footer-3{
+  a{
+    background-color: transparent;
+  }
+}
+
+.modal-titulo .modal-texto{
+  font-family: $fuente-open;
+}
+
+.card-rrss{
+  text-decoration: none;
+  color: white;
+  
+}
+
+.copyright{
+  font-family: $fuente-open;
+  font-size: .8rem;
+  font-weight: 200;
+}
+
+.card-somos-titulo, a{
+  font-family: $fuente-antonio;
+  font-weight: 200;
+  font-size: 2rem;
+  background-color: $color-tres;
+
+}
+
+.card-somos-parrafo{
+  font-family: $fuente-open;
+  font-size: .9rem;
+  text-align: justify;
+}
+
+.bi-arrow-right-circle{
+  color: $color-uno;
+  font-size: 2rem;
+}
+.modal-titulo{
+  background-color: $color-tres;
+
+  h5{
+    font-family: $fuente-open;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5rem;
+  }
+}
+
+.modal-clases-parrafos{
+  font-family: $fuente-open;
+  font-size: .9rem;
+  text-align: justify;
+  color: $color-ocho;
+}
+
+.modal-suave, .modal-intermedio, .modal-avanzado{
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  width: 100%;
+
+  p{
+    color: white;
+    font-family: $fuente-antonio;
+    font-size: 1.5rem;
+  }
+}
+
+.modal-suave{
+  background-color: $color-cinco;
+}
+.modal-intermedio{
+  background-color: $color-uno;
+}
+.modal-avanzado{
+  background-color: $color-ocho;
+}
+
+.modal-cond-subtitulos{
+  font-family: $fuente-antonio;
+  font-weight: 200;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.cond-lista{
+  font-family: $fuente-open;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.div-inscribete a{
+  font-size: 2rem;
+
+  :hover{
+    color: $color-dos;
+  }
+}
+
+.titulos-servicios{
+    width: 100%;
+}
+
+.servicios-yoga{
+    background-color: $color-tres;
+}
+
+.servicio-hipo{
+    background-color: $color-uno;
+}
+
+.servicio-masaje{
+    background-color: $color-cinco;
+}
+.servicio-tarot{
+    background-color: $color-nueve;
+}
+.servicio-flores{
+    background-color: $color-seis;
+}
+.servicio-dmt{
+    background-color: $color-siete;
+}
+
+.mensaje-envio{
+  color: $color-dos !important;
+}

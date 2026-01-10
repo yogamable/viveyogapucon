@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clases diseñadas para distintos niveles: básico, medio y avanzado. Ideal para personas que visitan Pucón y buscan bienestar y movimiento.">
+    <meta name="keywords" content="Montaña, lago, bosque y un espacio para volver al cuerpo, yoga en Pucon, clases de yoga en Pucon, yoga presencial Pucon, clases de yoga presenciales, yoga en la naturaleza, yoga vacaciones Pucon, yoga para turistas en Pucon, clases de yoga todos los niveles, yoga bienestar Pucon, dónde hacer yoga en Pucon, yoga Pucon">
+    <title>Vive Yoga Pucón</title>
+    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/scss/main.css">
+</head>
+
+<body>
+    <header class="header container-fluid">
+        <div class="nav-logo container-fluid">
+            <div class="div-titulo-logo">
+                <a href="./index.html" class="titulo-logo">
+                    <img src="./assets/img/logo.png" alt="logo" class="logo">
+                </a>
+            </div>
+            <div class="div-titulo-texto">
+                <a href="./index.html" class="titulo-texto">Montaña, lago, bosque… y un espacio para volver al cuerpo
+                </a>
+            </div>
+        </div>
+        <div class="nav-menu nav-menu-1 row">
+            <nav class="navbar navbar-expand-md pt-3 pb-3">
+                <div class="container-fluid menu-1">
+                    <button class="navbar-toggler menu-1-btn border border-0 fs-1" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon .menu-1-btn-toggler"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav navbar-1">
+                            <a class="nav-link" aria-current="page" href="#bannerhorario">Horarios</a> <span
+                                class="span-menu">|</span>
+                            <a class="nav-link" href="#valoresypacks">Packs & Valores</a> <span
+                                class="span-menu">|</span>
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalSomos">Quiénes
+                                somos</a> <span class="span-menu">|</span>
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalServicios">Otros
+                                servicios</a> <span class="span-menu">|</span>
+                            <a class="nav-link" href="#div-contactanos">Contáctanos</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="nav-menu nav-menu-2 row">
+            <nav class="navbar navbar-expand-md pt-3 pb-3">
+                <div class="container-fluid menu-2">
+                    <button class="navbar-toggler .menu-2-btn" type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-1 offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalSomos"
+                                data-bs-dismiss="offcanvas">Quiénes somos</a>
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalServicios"
+                                data-bs-dismiss="offcanvas">Otros servicios</a>
+                        </div>
+                    </div>
+                
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main class="contenedor-main">
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                    aria-label="Slide 0"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/img-1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h2 class="carousel-titulo">Clases diseñadas para distintos niveles</h2>
+                        <p class="carousel-parrafo">suave, intermedio y avanzado</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/img-4.JPG" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h2 class="carousel-titulo">Utilizamos implementos</h2>
+                        <p class="carousel-parrafo">para atender a las necesidades de cada cuerpo</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/img-2.JPG" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h2 class="carousel-titulo">Las prácticas incluyen</h2>
+                        <p class="carousel-parrafo">técnicas de concentración, respiración, movimiento articular y
+                            asanas</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/img-6.JPG" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h2 class="carousel-titulo">Ven a disfrutar de</h2>
+                        <p class="carousel-parrafo">clases de Yoga en la naturaleza</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/img-3.JPG" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h2 class="carousel-titulo">Vacacionar también es cuidar tu cuerpo,</h2>
+                        <p class="carousel-parrafo ms-sm-5 me-sm-5">moverte suave, soltar tensiones y volver a tu centro</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous
+
+                </span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="row container-fluid contenedor-cajas prop-scroll" id="bannerhorario">
+
+            <div class="col-lg-4 col-md-12 col-sm-12 div-subtitulos d-flex flex-column pb-md-4 pb-sm-4">
+                <h2 class="subtitulos">Elige tus horarios</h2>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalNiveles" class="d-flex align-items-center gap-2"><i class="bi bi-arrow-right-circle"></i>Conoce los tipos de clases</a>
+            </div>
+
+            <div class="col-lg-8 col-md-12 col-sm-12 caja-1 rounded pt-4 pb-4">
+                <div class="row pb-4">
+                    <div class="col-2 divs-horarios">
+                        <h3 class="text-center dia-semana">Hora</h3>
+                    </div>
+                    <div class="col-2 divs-horarios">
+                        <h3 class="text-center dia-semana">Lunes</h3>
+                    </div>
+                    <div class="col-2 divs-horarios">
+                        <h3 class="text-center dia-semana">Martes</h3>
+                    </div>
+                    <div class="col-2 divs-horarios">
+                        <h3 class="text-center dia-semana">Miércoles</h3>
+                    </div>
+                    <div class="col-2 divs-horarios">
+                        <h3 class="text-center dia-semana">Jueves</h3>
+                    </div>
+                    <div class="col-2 divs-horarios">
+                        <h3 class="text-center dia-semana">Viernes</h3>
+                    </div>
+                </div>
+                <div class="row pt-2 pb-2 bg-white">
+                    <div class="col-2 divs-horarios">
+                        <p class="hora-semana text-center pt-2">09:00</p>
+                    </div>
+                    <div class="col-2 divs-horarios"></div>
+                    <div class="col-2 divs-horarios nivel-intermedio rounded ">
+                        <p class="text-center pt-2">Intermedio</p>
+                    </div>
+                    <div class="col-2 divs-horarios"></div>
+                    <div class="col-2 divs-horarios"></div>
+                    <div class="col-2 divs-horarios nivel-suave rounded">
+                        <p class="text-center pt-2">Suave</p>
+                    </div>
+                </div>
+                <div class="row pt-2 pb-2 bg-white">
+                    <div class="col-2 divs-horarios">
+                        <p class="text-center hora-semana pt-2">19:00</p>
+                    </div>
+                    <div class="col-2 divs-horarios"></div>
+                    <div class="col-2 divs-horarios nivel-avanzado rounded">
+                        <p class="text-center pt-2">Avanzado</p>
+                    </div>
+                    <div class="col-2 divs-horarios"></div>
+                    <div class="col-2 divs-horarios nivel-intermedio rounded">
+                        <p class="text-center pt-2">Intermedio</p>
+                    </div>
+                    <div class="col-2 divs-horarios"></div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="row container-fluid prop-scroll contenedor-cajas caja-2" id="valoresypacks">
+            <div class="col-lg-4 col-md-12 col-sm-12 pb-md-4 pb-sm-4 div-subtitulos d-flex flex-column align-items-center">
+                <h2 class="subtitulos text-white text-center">Elige tu Pack</h2>
+                <a href="#" class="sub-condiciones d-flex align-items-center justify-content-start gap-2" data-bs-toggle="modal" data-bs-target="#modalCondiciones"><i class="bi bi-arrow-right-circle"></i> Revisa aquí nuestras Condiciones</a>
+            </div>
+            <div class="col-lg-8 col-md-12 col-sm-12 d-flex justify-content-between gap-lg-4 gap-md-3 gap-sm-3 gap-1">
+                <div class="card borde-card" style="width: 18rem;">
+                    <img src="./assets/img/img-4.JPG" class="card-img-top card-img-custom" alt="...">
+                    <div class="card-body div-card-body">
+                        <h5 class="card-title card-texto">Clase individual</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item card-descripcion">1 clase</li>
+                        <li class="list-group-item card-descripcion">$7.000.-</li>
+                        <li class="list-group-item card-descripcion"><small>*Válido por 30 días desde la compra.</small>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card borde-card" style="width: 18rem;">
+                    <img src="./assets/img/img-2.jpg" class="card-img-top card-img-custom" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title card-texto card-texto-2">Pack 1</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item card-descripcion">4 clases</li>
+                        <li class="list-group-item card-descripcion">$25.000.-</li>
+                        <li class="list-group-item card-descripcion"><small>*Válido por 30 días desde la compra.</small>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card borde-card" style="width: 18rem;">
+                    <img src="./assets/img/img-3.jpg" class="card-img-top card-img-custom" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title card-texto card-texto-2">Pack 2</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item card-descripcion">8 clases</li>
+                        <li class="list-group-item card-descripcion">$40.000.-</li>
+                        <li class="list-group-item card-descripcion"><small>*Válido por 30 días desde la compra.</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row container-fluid prop-scroll contenedor-cajas caja-3" id="div-contactanos">
+            <div class="col-lg-4 col-md-12 col-sm-12 pb-md-4 pb-4 div-subtitulos d-flex flex-column align-items-center">
+                <h2 class="subtitulos">Inscríbete</h2>
+                <div class="div-inscribete d-flex gap-2">
+                    <a href="https://wa.me/56977647324?"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/viveyogapucon"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.facebook.com/viveyogapucon"><i class="bi bi-facebook"></i></a>
+                    <a href="mailto:info@viveyogapucon.cl"><i class="bi bi-envelope"></i></a>
+                    
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-12 col-sm-12 d-flex flex-column justify-content-center gap-3 caja-formulario" id="formulario">
+                <div class="row">
+                    <div class="col-lg-6 col-md-5 col-sm-12">
+                        <label for="nombreyapellido">Nombre y apellido:</label>
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-sm-12">
+                        <input type="text" class="form-control" placeholder="Escribe tu nombre" id="nombreyapellido">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-5 col-sm-12">
+                        <label for="email" class="form-label">Email:</label>
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-sm-12">
+                        <input type="email" class="form-control" id="email"
+                            placeholder="nombre@correo.com">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-5 col-sm-12">
+                        <label for="packElegido" class="form-label">Selecciona tu pack:</label>
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-sm-12">
+                        <select class="form-select form-select-mb mb-3" id="packElegido">
+                            <option selected>Elige una opción</option>
+                            <option value="1">Clase individual</option>
+                            <option value="2">Pack 1 - 4 clases</option>
+                            <option value="3">Pack 2 - 8 clases</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-5 col-sm-12">
+                        <label for="mensaje" class="form-label">¿Necesitas más información?
+                            ¡Escríbenos!</label>
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-sm-12">
+                        <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="submit" class="btn boton-inscribirme">Inscribirme</button>
+                    <p id="mensaje-envio" class="d-none mt-3 text-success text-center mensaje-envio"> Gracias por inscribirte, te contactaremos pronto.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer container-fluid w-100">
+        <div class="row d-flex justify-content-center ps-4 pe-4">
+            <div class="col-lg-4 col-md-4 col-6 footer-1">
+                <a href="https://wa.me/56977647324"><i class="bi bi-whatsapp text-white a-footer-1"></i> +56977647324</a>
+                <a href="https://wa.me/56981987360"><i class="bi bi-whatsapp text-white a-footer-1"></i> +56981987360</a>
+                <a href="mailto:" class="text-white"><i class="bi bi-envelope text-white a-footer-1"></i> info@viveyogapucon.com</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalMapa" class="text-white a-footer-1"><i class="bi bi-geo-alt text-white"></i> Sector Tres Esquinas, Pucón</a>
+            </div>
+            <div class="col-lg-4 col-md-5 d-lg-flex d-md-flex d-none footer-2">
+                <h5 class="text-center">¡Ven a practicar Yoga!</h5>
+            </div>
+            <div class="col-lg-4 col-md-3 col-6 footer-3 pt-lg-2">
+                <a href="./index.html"><img class="logo-footer" src="./assets/img/logo_bco.png" alt="logo"></a>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-12">
+                <p class="text-white text-center copyright"><i class="bi bi-c-circle text-white"></i> Copyright | NICOLEVELASQUEZ | 2026</p>
+            </div>
+        </div>        
+    </footer>
+
+    <div class="modal rounded" tabindex="-1" id="modalSomos">
+        <div class="modal-dialog modal-lg modal-md">
+            <div class="modal-content">
+                <div class="modal-header modal-titulo">
+                    <h5 class="modal-title text-center d-flex justify-content-center align-items-center gap-2"><i class="bi bi-arrow-right-circle text-white"></i> Quiénes somos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="card mb-3" style="max-width: max-content;">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="./assets/img/nicole.jpg" class="img-card-modal rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title card-somos-titulo text-white text-center pt-1 pb-1 rounded gap-3">Nicole Velásquez <span><small>
+                                        <a class="card-text card-rrss" href="https://www.instagram.com/yogamablecl">@yogamablecl</a></small></span>
+                                    </h5>
+
+                                    <p class="card-text card-somos-parrafo">Es profesora de Yoga Tradicional, formada en método Loknath, con estudios en Danza y Danza Movimiento Terapia. Imparte clases de yoga desde 2019 y cuenta con experiencia trabajando con diversos públicos: niños, niñas y adolescentes; personas adultas en distintos niveles de práctica; clases individuales orientadas a la recuperación de lesiones y al acompañamiento de procesos de salud mental, en paralelo a tratamientos realizados por profesionales de cada área; así como trabajo con pacientes psiquiátricos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3 modal-quienes-somos" style="max-width: max-content;">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="./assets/img/mari.jpg" class="img-card-modal rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title card-somos-titulo text-white text-center pt-1 pb-1 rounded gap-3">María Paz Papic <span><small>
+                                        <a class="card-text card-rrss" href="https://www.instagram.com/yoganacer">@yoganacer</a></small></span>
+                                    </h5>
+
+                                    <p class="card-text card-somos-parrafo">Es profesora de Yoga especializada en Yoga Pre y Postparto, Instructora de Ejercicios Hipopresivos IDEHA, especializada en esferodinamia aplicada a la columna. Cuenta con más de 10 años de experiencia acompañando a mujeres y familias en distintas etapas vitales. Su trabajo integra el yoga como una herramienta de bienestar físico, emocional y vincular, con un enfoque respetuoso de los procesos corporales y emocionales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="modalNiveles">
+        <div class="modal-dialog modal-xl pt-md-5">
+            <div class="modal-content ">
+                <div class="modal-header modal-titulo">
+                    <h5 class="modal-title text-center d-flex justify-content-center align-items-center gap-2"><i class="bi bi-arrow-right-circle text-white"></i> Conoce los tipos de clases</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                <div class="modal-body border-none>
+                    <div class="card modal-quienes-somos" style="max-width: max-content;">
+                        <div class="row border-bottom-lg">
+                            <div class="col-md-3 d-flex justify-content-center align-items-center">
+                                <div class="modal-suave d-flex align-content-center justify-content-center pb-0">
+                                    <p class="text-center">Suave</p>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <p class="card-text modal-texto modal-clases-parrafos">La práctica propone movimientos lentos, posturas accesibles y transiciones simples que permiten soltar tensiones, mejorar la movilidad y recuperar una relación amable con el cuerpo. Se utilizan implementos como cojines, mantas o soportes para acompañar el descanso, el sostén y la comodidad. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row border-bottom-lg">
+                            <div class="col-md-3 d-flex justify-content-center align-items-center">
+                                <div class="modal-intermedio d-flex align-content-center justify-content-center pb-0">
+                                    <p class="text-center">Intermedio</p>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+
+                                    <p class="card-text modal-texto modal-clases-parrafos">Se combinan secuencias dinámicas con el uso de implementos como balón de pilates (fitball), que amplifican la percepción corporal, aportan sostén, desafío y nuevas formas de habitar el movimiento. A través de desafíos progresivos, trabajamos fuerza, estabilidad y movilidad, poniendo especial atención en el fortalecimiento del abdomen profundo y el suelo pélvico, incorporando también ejercicios hipopresivos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pb-0">
+                            <div class="col-md-3 d-flex justify-content-center align-items-center">
+                                <div class="modal-avanzado d-flex align-content-center justify-content-center pb-0">
+                                    <p class="text-center">Avanzado</p>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <p class="card-text modal-texto modal-clases-parrafos">Clase de intensidad alta, dirigida a personas con experiencia previa en yoga que buscan profundizar su práctica física y su capacidad de sostén. La clase propone secuencias dinámicas, posturas desafiantes y transiciones que requieren fuerza, estabilidad, coordinación y concentración. Es una experiencia intensa y transformadora que desafía el cuerpo y la mente, fortaleciendo la confianza, la autonomía y la sensación de potencia corporal.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer modal-clases-titulo"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-xl pt-5" tabindex="-1" id="modalCondiciones">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modal-titulo">
+                    <h5 class="modal-title d-flex align-items-center gap-2"><i class="bi bi-arrow-right-circle text-white"></i>Condiciones</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ps-4 pe-2">
+                    <h5 class="modal-cond-subtitulos">Sobre la compra y agendamiento de las clases</h5>
+                    <ol class="cond-lista">
+                        <li>Para comprar las clases escríbenos indicando el Pack que deseas y te enviaremos los datos de pago.</li>
+                        <li>Si tomas una clase suelta por primera vez y luego quieres comprar un Pack, esa clase se abona al Pack.</li>
+                        <li>Cada Pack es válido por 30 días.</li>
+                        <li>Las clases se agendan al comprar el Pack y tienes derecho a cambiar solo 1 clase agendada, con mínimo 24 horas de anticipación.</li>
+                        <li>Para agendar las clases </li>
+                        <li>Una vez pagadas las clases no hay devoluciones, pero puedes transferirlas a otra persona.</li>
+                    </ol>
+
+                    <h5 class="modal-cond-subtitulos">Sobre las reglas en la sala</h5>
+                    <ol class="cond-lista">
+                        <li>Para ingresar a tu primera clase debes haber respondido el formulario de salud enviado al momento de la inscripción.</li>
+                        <li>La sala cuenta con implementos para todos los practicantes: mat, frazadas, balones, bloques y cintos.</li>
+                        <li>Si utilizas implementos debes dejarlos ordenados al finalizar la clase.</li>
+                        <li>Las clases comienzan puntual y tienen una duración de 60 minutos, por lo que esperamos puntualidad. Y si por algun motivo no llegas a tiempo, debes esperar a que la profesora abra la puerta para no interrumpir el inicio de la clase.</li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="modalMapa">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cómo llegar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex justify-content-center">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5596.825792937884!2d-71.9597460434858!3d-39.280532696742895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96147f56e722d61b%3A0xbadccae855a5c5c7!2sEspacio%20para%20las%20infancias%20IKIGAI!5e0!3m2!1ses!2scl!4v1767835649355!5m2!1ses!2scl"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal rounded" tabindex="-1" id="modalServicios">
+        <div class="modal-dialog modal-lg pt-md-5">
+            <div class="modal-content">
+                <div class="modal-header modal-titulo">
+                    <h5 class="modal-title text-center d-flex justify-content-center align-items-center gap-2"><i class="bi bi-arrow-right-circle text-white"></i> Yoga | Danza Terapia | Flores de Bach | Tarot</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                <div class="modal-body">
+                    <div class="card" style="max-width: max-content;">
+                        
+                        <div class="row ps-4 pe-4">
+                            <div class="col-md-3 d-flex justify-content-center align-items-center">
+                                <div class="d-flex justify-content-center align-items-center pt-3 rounded titulos-servicios servicios-yoga">
+                                    <p class="text-center text-white">Yoga Prenatal</p>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+
+                                    <p class="card-text modal-texto modal-clases-parrafos">Entrega bienestar físico y emocional durante la gestación, fortalece la conexión mamá-bebé, entrega preparación para el parto y es una linda instancia para compartir con otras mamás.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ps-4 pe-4">
+                            <div class="col-md-3 d-flex justify-content-center align-items-center">
+                                <div class="d-flex justify-content-center align-items-center pt-3 rounded titulos-servicios servicios-yoga">
+                                    <p class="text-center text-white">Yoga Posnatal</p>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <p class="card-text modal-texto modal-clases-parrafos">Clase diseñada para que las mamás asistan con su bebé y cubrir las necesidades físicas del postparto: aliviar tensiones, sentir bienestar, fortalecer abdomen y suelo pélvico de forma protegida. (Para bebés de 2 meses a 1 año)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ps-4 pe-4 pb-4">
+                            <div class="col-md-3 d-flex justify-content-center align-items-center">
+                                <div class="d-flex align-content-center justify-content-center pb-0 d-flex justify-content-center align-items-center pt-3 rounded titulos-servicios servicios-yoga">
+                                    <p class="text-center text-white">Yoga Individual</p>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <p class="card-text modal-texto modal-clases-parrafos">Clases particulares enfocadas en las necesidades del practicante.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ps-4 pe-4">
+                            <div class="col-md-3 d-flex justify-content-center align-items-center">
+                                <div class="d-flex align-content-center justify-content-center pb-0 d-flex justify-content-center align-items-center pt-3 rounded titulos-servicios servicios-yoga">
+                                    <p class="text-center text-white">Yoga en pareja</p>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <p class="card-text modal-texto modal-clases-parrafos">Un espacio de relajo y conexión en pareja, es una clase suave donde además se enseñan masajes y herramientas de preparación al parto.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ps-4 pe-4">
+                            <div class="col-md-3 d-flex align-items-center">
+                                <div class="d-flex justify-content-center align-items-center pt-3 rounded titulos-servicios servicios-yoga">
+                                    <p class="text-center text-white">Yoga Adulto Mayor</p>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <p class="card-text modal-texto modal-clases-parrafos">Clase de nivel básico para adultos mayores y personas con movilidad reducida, enfocada en la movilidad articular, coordinación de movimientos con respiración, desarrollo del equilibrio y fortalecimiento corporal.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ps-4 pe-4">
+                            <div class="col-md-3 d-flex justify-content-center align-items-center">
+                                <div class="d-flex align-content-center justify-content-center pt-3 titulos-servicios servicio-hipo rounded">
+                                    <p class="text-center text-white">Clase Hipopresivos</p>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <p class="card-text modal-texto modal-clases-parrafos">Los ejercicios hipopresivos se caracterizan por fortalecer la musculatura abdominal, reducir el perímetro cintura y ombligo, es una herramienta terapéutica para tratar disfunciones asociadas a debilidad en piso pelvico, como incontinencia urinaria y prolapso.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ps-4 pe-4">
+                            <div class="col-md-3 d-flex justify-content-center align-items-center">
+                                <div class="d-flex align-content-center justify-content-center pt-3 titulos-servicios servicio-masaje rounded">
+                                    <p class="text-center text-white">Taller de <br> masaje infantil</p>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <p class="card-text modal-texto modal-clases-parrafos">Este taller es una invitación a integrar el masaje infantil en la vida cotidiana de manera simple, amorosa y confiada. Entrega herramientas para que madres, padres y cuidadores puedan aprovechar todos los beneficios de esta práctica, que fortalece el apego seguro y acompaña el desarrollo integral de los bebés.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ps-4 pe-4">
+                            <div class="col-md-3 d-flex justify-content-center align-items-center">
+                                <div class="d-flex justify-content-center align-items-center pt-3 titulos-servicios servicio-dmt rounded">
+                                    <p class="text-center text-white">Danza Movimiento Terapia</p>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <p class="card-text modal-texto modal-clases-parrafos"> Enfoque terapéutico que utiliza el movimiento corporal como medio principal para promover la integración emocional, física, mental y social de la persona. Mediante la ampliación del movimiento se detectan patrones corporales, emocionales y relacionales, que permiten tomar conciencia y expresar emociones, vivencias y conflictos que muchas veces no logran ser verbalizados.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ps-4 pe-4">
+                            <div class="col-md-3 d-flex justify-content-center align-items-center">
+                                <div class="d-flex align-content-center justify-content-center pt-3 titulos-servicios servicio-flores rounded">
+                                    <p class="text-center text-white">Terapia <br>Floral de Bach</p>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <p class="card-text modal-texto modal-clases-parrafos"> Acompañamiento terapéutico a través del uso de Flores de Bach, seleccionadas a partir de una conversación consciente y profunda, orientada a identificar las emociones que se encuentran en conflicto. A lo largo del proceso, las esencias actúan como un apoyo para llevar atención a aquello que nos aflige, favoreciendo la comprensión, integración y transformación de las emociones desde su virtud.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="row ps-4 pe-4">
+                                <div class="col-md-3 d-flex justify-content-center align-items-center">
+                                    <div class="d-flex align-content-center justify-content-center pt-3 titulos-servicios servicio-tarot rounded">
+                                        <p class="text-center text-white">Tarot Terapéutico Transpersonal</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="card-body">
+                                        <p class="card-text modal-texto modal-clases-parrafos">Lecturas en tiempo presente y observan las causas y consecuencias de eventos pasados, desde el relato del consultante y con la guía de la tarotista, a través de preguntas que surgen del mundo simbólico del Tarot. Lo que buscamos es ampliar la información para observarnos con perspectiva.
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer modal-clases-titulo"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
