@@ -7,7 +7,7 @@
     <meta name="description" content="Clases diseñadas para distintos niveles: básico, medio y avanzado. Ideal para personas que visitan Pucón y buscan bienestar y movimiento.">
     <meta name="keywords" content="Montaña, lago, bosque y un espacio para volver al cuerpo, yoga en Pucon, clases de yoga en Pucon, yoga presencial Pucon, clases de yoga presenciales, yoga en la naturaleza, yoga vacaciones Pucon, yoga para turistas en Pucon, clases de yoga todos los niveles, yoga bienestar Pucon, dónde hacer yoga en Pucon, yoga Pucon">
     <title>Vive Yoga Pucón</title>
-    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/logo.webp" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -21,7 +21,7 @@
         <div class="nav-logo container-fluid">
             <div class="div-titulo-logo">
                 <a href="./index.html" class="titulo-logo">
-                    <img src="./assets/img/logo.png" alt="logo" class="logo">
+                    <img src="./assets/img/logo.webp" alt="logo" class="logo">
                 </a>
             </div>
             <div class="div-titulo-texto">
@@ -103,7 +103,7 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./assets/img/img-1.jpg" class="d-block w-100" alt="...">
+                    <img src="./assets/img/img-1.webp" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-md-block">
                         <h2 class="carousel-titulo">Clases diseñadas para distintos niveles</h2>
                         <p class="carousel-parrafo">suave, intermedio y avanzado</p>
@@ -271,49 +271,67 @@
                 </div>
             </div>
             <div class="col-lg-8 col-md-12 col-sm-12 d-flex flex-column justify-content-center gap-3 caja-formulario" id="formulario">
-                <div class="row">
-                    <div class="col-lg-6 col-md-5 col-sm-12">
-                        <label for="nombreyapellido">Nombre y apellido:</label>
+                <form method="post" action="1.php">
+
+                    <div class="row">
+                        <div class="col-lg-6 col-md-5 col-sm-12">
+                            <label for="nombreyapellido">Nombre y apellido:</label>
+                        </div>
+                        <div class="col-lg-6 col-md-7 col-sm-12">
+                            <input name="nombre" type="text" class="form-control" placeholder="Escribe tu nombre" id="nombreyapellido">
+                        </div>
                     </div>
-                    <div class="col-lg-6 col-md-7 col-sm-12">
-                        <input type="text" class="form-control" placeholder="Escribe tu nombre" id="nombreyapellido">
+                    <div class="row pt-3">
+                        <div class="col-lg-6 col-md-5 col-sm-12">
+                            <label for="email" class="form-label">Email:</label>
+                        </div>
+                        <div class="col-lg-6 col-md-7 col-sm-12">
+                            <input name="email" type="email" class="form-control" id="email"
+                                placeholder="nombre@correo.com">
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 col-md-5 col-sm-12">
-                        <label for="email" class="form-label">Email:</label>
+                    <div class="row pt-3">
+                        <div class="col-lg-6 col-md-5 col-sm-12">
+                            <label for="telefono" class="form-label">Teléfono:</label>
+                        </div>
+                        <div class="col-lg-6 col-md-7 col-sm-12">
+                            <input name="telefono" type="tel" class="form-control" id="email"
+                                placeholder="+569 99999999">
+                                <div class="form-check gap-4 pt-3">
+                                    <input name="autorizacion" class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                                    <label class="form-check-label" for="checkChecked">
+                                        Quiero que me contacten por whatsapp
+                                    </label>
+                                </div>
+                            </div>
                     </div>
-                    <div class="col-lg-6 col-md-7 col-sm-12">
-                        <input type="email" class="form-control" id="email"
-                            placeholder="nombre@correo.com">
+                    <div class="row pt-3">
+                        <div class="col-lg-6 col-md-5 col-sm-12">
+                            <label for="packElegido" class="form-label">Selecciona tu pack:</label>
+                        </div>
+                        <div class="col-lg-6 col-md-7 col-sm-12">
+                            <select name="pack" value="1" class="form-select form-select-mb mb-3" id="packElegido">
+                                <option selected>Elige una opción</option>
+                                <option value="1">Clase individual</option>
+                                <option value="2">Pack 1 - 4 clases</option>
+                                <option value="3">Pack 2 - 8 clases</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 col-md-5 col-sm-12">
-                        <label for="packElegido" class="form-label">Selecciona tu pack:</label>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-5 col-sm-12">
+                            <label for="mensaje" class="form-label">¿Necesitas más información?
+                                ¡Escríbenos!</label>
+                        </div>
+                        <div class="col-lg-6 col-md-7 col-sm-12">
+                            <textarea name="mensaje" class="form-control" id="mensaje" rows="3"></textarea>
+                        </div>
                     </div>
-                    <div class="col-lg-6 col-md-7 col-sm-12">
-                        <select class="form-select form-select-mb mb-3" id="packElegido">
-                            <option selected>Elige una opción</option>
-                            <option value="1">Clase individual</option>
-                            <option value="2">Pack 1 - 4 clases</option>
-                            <option value="3">Pack 2 - 8 clases</option>
-                        </select>
+                    <div class="row pt-3">
+                        <button type="submit" class="btn boton-inscribirme">Inscribirme</button>
+                        <p id="mensaje-envio" class="d-none mt-3 text-success text-center mensaje-envio"> Gracias por inscribirte, te contactaremos pronto.</p>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 col-md-5 col-sm-12">
-                        <label for="mensaje" class="form-label">¿Necesitas más información?
-                            ¡Escríbenos!</label>
-                    </div>
-                    <div class="col-lg-6 col-md-7 col-sm-12">
-                        <textarea class="form-control" id="mensaje" rows="3"></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <button type="submit" class="btn boton-inscribirme">Inscribirme</button>
-                    <p id="mensaje-envio" class="d-none mt-3 text-success text-center mensaje-envio"> Gracias por inscribirte, te contactaremos pronto.</p>
-                </div>
+                </form>
             </div>
         </div>
     </main>
@@ -324,7 +342,7 @@
             <div class="col-lg-4 col-md-4 col-6 footer-1">
                 <a href="https://wa.me/56977647324"><i class="bi bi-whatsapp text-white a-footer-1"></i> +56977647324</a>
                 <a href="https://wa.me/56981987360"><i class="bi bi-whatsapp text-white a-footer-1"></i> +56981987360</a>
-                <a href="mailto:" class="text-white"><i class="bi bi-envelope text-white a-footer-1"></i> info@viveyogapucon.com</a>
+                <a href="mailto:" class="text-white"><i class="bi bi-envelope text-white a-footer-1"></i> info@viveyogapucon.cl</a>
                 <a href="#" data-bs-toggle="modal" data-bs-target="#modalMapa" class="text-white a-footer-1"><i class="bi bi-geo-alt text-white"></i> Sector Tres Esquinas, Pucón</a>
             </div>
             <div class="col-lg-4 col-md-5 d-lg-flex d-md-flex d-none footer-2">
@@ -353,7 +371,7 @@
                     <div class="card mb-3" style="max-width: max-content;">
                         <div class="row">
                             <div class="col-md-4">
-                                <img src="./assets/img/nicole.jpg" class="img-card-modal rounded-start" alt="...">
+                                <img src="./assets/img/nicole.webp" class="img-card-modal rounded-start" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -370,7 +388,7 @@
                     <div class="card mb-3 modal-quienes-somos" style="max-width: max-content;">
                         <div class="row">
                             <div class="col-md-4">
-                                <img src="./assets/img/mari.jpg" class="img-card-modal rounded-start" alt="...">
+                                <img src="./assets/img/mari.webp" class="img-card-modal rounded-start" alt="...">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
