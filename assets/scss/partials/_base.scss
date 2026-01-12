@@ -123,17 +123,14 @@
 
 .div-subtitulos a{
   font-family: $fuente-open;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-transform: uppercase;
   text-decoration: none;
   color: $color-uno;
   background-color: transparent;
+  text-align: left;
 
-  @media screen and (max-width: 500px) {
-    font-size: 1rem;
-    text-align: center;
-  }
-  @media screen and (max-width: 390px) {
+  @media screen and (max-width: 1122px) {
     font-size: .9rem;
     text-align: center;
   }

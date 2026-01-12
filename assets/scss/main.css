@@ -143,19 +143,14 @@
 
 .div-subtitulos a {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-transform: uppercase;
   text-decoration: none;
   color: #2b9999;
   background-color: transparent;
+  text-align: left;
 }
-@media screen and (max-width: 500px) {
-  .div-subtitulos a {
-    font-size: 1rem;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 1122px) {
   .div-subtitulos a {
     font-size: 0.9rem;
     text-align: center;
@@ -570,6 +565,19 @@
   justify-content: center;
   align-items: center;
 }
+.div-subtitulos a {
+  align-items: start;
+}
+@media screen and (max-width: 1122px) {
+  .div-subtitulos {
+    align-items: start;
+  }
+}
+@media screen and (max-width: 991px) {
+  .div-subtitulos {
+    align-items: center;
+  }
+}
 
 .contenedor-cajas {
   padding: 3rem 3rem;
@@ -596,6 +604,7 @@
 
 .div-card-pack {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   gap: 1rem;
   padding: 0;
@@ -682,6 +691,12 @@
   background-color: #acd0cf;
 }
 
+.modal-body-servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
 @media screen and (max-width: 600px) {
   .modal-body-servicios {
     display: flex;
