@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem 2rem 0 2rem;
+    padding: 2rem 3rem 0 3rem;
     
     .nav-logo{
         display: flex;
@@ -41,12 +41,18 @@
 
     @media screen and (max-width: 600px) {
         position: relative;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
 }
 
 .prop-scroll{
     scroll-margin-top: 14rem;
+
+    @media screen and (max-width: 400px) {
+        scroll-margin-top: 12rem;
+    }
 }
 
 .carousel-item{
@@ -67,18 +73,22 @@
 
 .div-subtitulos{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    padding-left: 3rem;
 
-    a{
-        align-items: start;
+    a i{
+        display: flex;
+        align-items: center;
     }
 
     @media screen and (max-width: 1122px) {
-    align-items: start;
+    align-items: left;
   }
     @media screen and (max-width: 991px) {
     align-items: center;
+    padding: 0;
   }
 }
 
@@ -151,6 +161,14 @@
 
 .footer{
     background-color: $color-uno;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+    @media screen and (max-width: 600px){
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+
     
     .footer-1{
         display: flex;
@@ -175,11 +193,20 @@
         display: flex;
         align-content: center;
         justify-content: end;
+
+        @media screen and (max-width: 530px){
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
         
-        img{
+        .logo-footer{
             max-width: fit-content;
             height: 10rem;
             object-fit: contain;
+
+            @media screen and (max-width: 530px){
+                height: 8rem;
+            }
         }
     }
 }
@@ -195,7 +222,7 @@
   }
 }
 
-.offcanvas-header, .offcanvas-body{
+.offcanvas-1, .offcanvas-body{
     background-color: $color-tres;
 }
 

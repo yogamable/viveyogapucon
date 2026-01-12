@@ -54,31 +54,25 @@
             </nav>
         </div>
 
-        <div class="nav-menu nav-menu-2 row">
-            <nav class="navbar navbar-expand-md pt-3 pb-3">
-                <div class="container-fluid menu-2">
-                    <button class="navbar-toggler .menu-2-btn" type="button"
-                        data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div class="offcanvas offcanvas-1 offcanvas-end" tabindex="-1" id="offcanvasNavbar">
-                    <div class="offcanvas-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-                    </div>
+        <div class="nav-menu nav-menu-2 row d-lg-none d-md-none d-sm-flex">
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                <i class="bi bi-list"></i>
+            </button>
 
-                    <div class="offcanvas-body">
-                        <div class="navbar-nav">
-                            <a class="nav-link titulo-offcanvas" href="#" data-bs-toggle="modal" data-bs-target="#modalSomos"
-                                data-bs-dismiss="offcanvas">Quiénes somos</a>
-                            <a class="nav-link titulo-offcanvas" href="#" data-bs-toggle="modal" data-bs-target="#modalServicios"
-                                data-bs-dismiss="offcanvas">Otros servicios</a>
-                        </div>
-                    </div>
-                
+            <div class="offcanvas offcanvas-top" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-            </nav>
+                <div class="offcanvas-body">                    
+                    <a class="nav-link" aria-current="page" href="#bannerhorario">Horarios</a>
+                    <a class="nav-link" href="#valoresypacks">Packs & Valores</a> 
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalSomos">Quiénes
+                        somos</a>
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalServicios">Otros
+                        servicios</a>
+                    <a class="nav-link" href="#div-contactanos">Contáctanos</a>
+                </div>
+            </div>
 
         </div>
     </header>
@@ -155,7 +149,7 @@
 
         <div class="row container-fluid contenedor-cajas prop-scroll" id="bannerhorario">
 
-            <div class="col-lg-4 col-md-12 col-sm-12 div-subtitulos d-flex flex-column pb-4">
+            <div class="col-lg-4 col-12 div-subtitulos d-flex flex-column pb-4">
                 <h2 class="subtitulos">Elige tus horarios</h2>
                 <a href="#" data-bs-toggle="modal" data-bs-target="#modalNiveles" class="d-flex align-items-center gap-2"><i class="bi bi-arrow-right-circle"></i>Conoce los tipos de clases</a>
             </div>
@@ -215,11 +209,11 @@
         </div>
 
         <div class="row container-fluid prop-scroll contenedor-cajas caja-2" id="valoresypacks">
-            <div class="col-lg-4 col-md-12 col-sm-12 pb-md-4 pb-sm-4 div-subtitulos d-flex flex-column align-items-center pb-4">
+            <div class="col-lg-4 col-12 div-subtitulos d-flex flex-column pb-4">
                 <h2 class="subtitulos text-white">Elige tu Pack</h2>
-                <a href="#" class="d-flex gap-2" data-bs-toggle="modal" data-bs-target="#modalCondiciones"><i class="bi bi-arrow-right-circle"></i> Revisa aquí nuestras Condiciones</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalCondiciones" class="d-flex align-items-center gap-2 text-white"><i class="bi bi-arrow-right-circle text-white"></i> Revisa aquí nuestras Condiciones</a>
             </div>
-            <div class="col-lg-8 col-12 div-card-pack">
+            <div class="col-lg-8 col-12 div-card-pack d-flex">
                 <div class="card borde-card" style="width: 18rem;">
                     <img src="./assets/img/img-6.JPG" class="card-img-top card-img-custom" alt="...">
                     <div class="card-body div-card-body">
@@ -260,9 +254,10 @@
         </div>
 
         <div class="row container-fluid prop-scroll contenedor-cajas caja-3" id="div-contactanos">
-            <div class="col-lg-4 col-md-12 col-sm-12 pb-md-4 pb-4 div-subtitulos d-flex flex-column align-items-center">
+            <div class="col-lg-4 col-12 pb-4 div-subtitulos d-flex flex-column">
                 <h2 class="subtitulos">Inscríbete</h2>
-                <div class="div-inscribete d-flex gap-2">
+                <p class="d-flex align-items-center gap-2">Conoce más sobre nosotras</p>
+                <div class="div-inscribete d-flex gap-3">
                     <a href="https://wa.me/56977647324?"><i class="bi bi-whatsapp"></i></a>
                     <a href="https://www.instagram.com/viveyogapucon"><i class="bi bi-instagram"></i></a>
                     <a href="https://www.facebook.com/viveyogapucon"><i class="bi bi-facebook"></i></a>
@@ -342,8 +337,8 @@
 
 
     <footer class="footer container-fluid w-100">
-        <div class="row d-flex justify-content-center ps-4 pe-4">
-            <div class="col-lg-4 col-md-4 col-6 footer-1">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-4 col-md-4 col-9 footer-1">
                 <a href="https://wa.me/56977647324"><i class="bi bi-whatsapp text-white a-footer-1"></i> +56977647324</a>
                 <a href="https://wa.me/56981987360"><i class="bi bi-whatsapp text-white a-footer-1"></i> +56981987360</a>
                 <a href="mailto:" class="text-white"><i class="bi bi-envelope text-white a-footer-1"></i> info@viveyogapucon.cl</a>
@@ -352,7 +347,7 @@
             <div class="col-lg-4 col-md-5 d-lg-flex d-md-flex d-none footer-2">
                 <h5 class="text-center">¡Ven a practicar Yoga!</h5>
             </div>
-            <div class="col-lg-4 col-md-3 col-6 footer-3 pt-lg-2">
+            <div class="col-lg-4 col-md-3 col-3 footer-3 pt-lg-2">
                 <a href="./index.html"><img class="logo-footer" src="./assets/img/logo_bco.png" alt="logo"></a>
             </div>
         </div>
