@@ -1,3 +1,5 @@
+
+
 .menu-1{
   .navbar-1{
     gap: 1rem;
@@ -44,18 +46,15 @@
   background-color: transparent;
 }
 
-.logo{
-  @media screen and (max-width: 412) and (min-width: 600px) {
-      font-size: 1rem;
-    }
-
-}
-
 .div-titulo-texto{
   @media screen and (min-width: 450px) and (max-width: 1030px){
     text-align: end;
     display: flex;
     justify-content: right;
+  }
+
+  @media screen and (max-width: 449px) {
+    text-align: center;
   }
 }
 
@@ -81,6 +80,17 @@
     margin-left: 2rem;
     text-align: end;
   }
+  @media screen and (max-width: 599px) and (min-width: 401px) {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    text-align: end;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 2rem;
+    margin: 0;
+    
+  }
 }
 
 .carousel-titulo{
@@ -93,7 +103,11 @@
     font-size: 1.8rem;
     margin-left: 5rem;
     margin-right: 5rem;
-  }  
+  }
+  @media  screen and (max-width: 400px){
+    font-size: 1.5rem;
+    margin: 0;
+  }
 }
 
 .carousel-parrafo{
@@ -114,6 +128,15 @@
   text-decoration: none;
   color: $color-uno;
   background-color: transparent;
+
+  @media screen and (max-width: 500px) {
+    font-size: 1rem;
+    text-align: center;
+  }
+  @media screen and (max-width: 390px) {
+    font-size: .9rem;
+    text-align: center;
+  }
 }
 
 .btn-close{
@@ -133,6 +156,13 @@
   font-family: $fuente-antonio;
   font-size: 3rem;
   color: $color-ocho;
+
+  @media screen and (max-width: 434px) {
+    font-size: 2.8rem;
+  }
+  @media screen and (max-width: 372px) {
+    font-size: 2.5rem;
+  }
 }
 
 .divs-horarios{
@@ -151,6 +181,13 @@
     @media screen and (max-width: 560px){
       
       font-weight: 200;
+    }
+    @media screen and (max-width: 560px){
+      
+      font-size: .8rem;
+      margin: 0;
+      text-align: center;
+      padding-bottom: .5rem;
     }
   }
 }
@@ -201,6 +238,13 @@
   }
 }
 
+.card-body-pack{
+  @media screen and (max-width: 400px) {
+    padding: 0;
+    margin: 0;
+  }
+}
+
 .card-texto{
   font-family: $fuente-antonio;
   font-size: 1.5rem;
@@ -244,6 +288,9 @@
     @media screen and (max-width: 560px) {
       font-size: .9rem;
     }
+    @media screen and (max-width: 452px) {
+      font-size: .8rem;
+    }
   }
 
   a:hover{
@@ -276,9 +323,6 @@
   }
 }
 
-.modal-titulo .modal-texto{
-  font-family: $fuente-open;
-}
 
 .card-rrss{
   text-decoration: none;
@@ -298,6 +342,10 @@
   font-size: 2rem;
   background-color: $color-tres;
 
+  @media screen and (max-width:400px) {
+    font-size: 1.5rem;
+  }
+
 }
 
 .card-somos-parrafo{
@@ -309,16 +357,27 @@
 .bi-arrow-right-circle{
   color: $color-uno;
   font-size: 2rem;
+  
+  @media screen and (max-width:400px) {
+    font-size: 1rem;
+  }
+}
+.modal-titulo .modal-texto{
+  font-family: $fuente-open;
 }
 .modal-titulo{
   background-color: $color-tres;
-
+  
   h5{
     font-family: $fuente-open;
     font-weight: 400;
     text-transform: uppercase;
     color: white;
     font-size: 1.5rem;
+
+    @media screen and (max-width: 400px) {
+    font-size: 1rem;
+  }
   }
 }
 
@@ -399,4 +458,11 @@
 
 .mensaje-envio{
   color: $color-dos !important;
+}
+
+.titulo-offcanvas{
+  @media screen and (max-width: 400px) {
+    font-size: 1.2rem;
+    text-align: center;
+  }
 }

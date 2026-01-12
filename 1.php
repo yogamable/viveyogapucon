@@ -6,7 +6,7 @@ $pack = $_POST['pack'];
 $mensaje = $_POST['mensaje'];
 
 $formcontent="
-    Nombre: $name \n
+    Nombre: $nombre \n
     E-mail: $email \n
     Pack elegido: $pack \n
     Mensaje: $mensaje

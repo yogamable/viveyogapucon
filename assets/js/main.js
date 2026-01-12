@@ -3,37 +3,33 @@
 const offcanvasElementList = document.querySelectorAll('.offcanvas')
 const offcanvasList = [...offcanvasElementList].map(offcanvasEl => new bootstrap.Offcanvas(offcanvasEl))
 
-document.querySelector('.boton-inscribirme').addEventListener('click', function (e) {
+
+const btnInscribirme = document.querySelector(".boton-inscribirme");
+const mensajeEnvio = document.querySelector("#contenedor-mensaje");
+
+btnInscribirme.addEventListener("click", function (e) {
     e.preventDefault();
 
-    const nombre = document.getElementById('nombreyapellido').value;
-    const email = document.getElementById('email').value;
-    const pack = document.getElementById('packElegido').value;
-    const mensaje = document.getElementById('mensaje').value;
+    const nombre = document.querySelector("#nombreyapellido").value.trim();
+    const email = document.querySelector("#email").value.trim();
+    const telefono = document.querySelector("#telefono").value.trim();
+    const autorizacion = document.querySelector("#autorizacion").checked;
+    const pack = document.querySelector("#packElegido").value.trim();
+    const mensaje = document.querySelector("#mensaje").value.trim();
 
-    if (!nombre || !email) {
-        alert("Por favor completa nombre y email");
-        return;
+    if (
+        nombre &&
+        email &&
+        telefono &&
+        autorizacion &&
+        pack &&
+        mensaje
+    ) {
+        mensajeEnvio.classList.remove("d-none");
+    } else {
+        mensajeEnvio.classList.add("d-none");
+        alert("Por favor completa todos los campos.");
     }
-
-    // 👉 mostrar mensaje primero
-    const mensajeEnvio = document.getElementById('mensaje-envio');
-    mensajeEnvio.classList.remove('d-none');
-
-    const destinatario = "info@viveyogapucon.com";
-    const asunto = `Nueva inscripción ${nombre} - Vive Yoga Pucón`;
-
-    const cuerpo = `
-Nombre: ${nombre}
-Email: ${email}
-Pack seleccionado: ${pack}
-
-Mensaje:
-${mensaje}
-    `;
-
-    // 👉 esperar un poco y recién abrir el mail
-    setTimeout(() => {
-        window.location.href = `mailto:${destinatario}?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
-    }, 300);
 });
+
+

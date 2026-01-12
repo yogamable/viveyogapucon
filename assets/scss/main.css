@@ -53,17 +53,16 @@
   background-color: transparent;
 }
 
-@media screen and (max-width: 412) and (min-width: 600px) {
-  .logo {
-    font-size: 1rem;
-  }
-}
-
 @media screen and (min-width: 450px) and (max-width: 1030px) {
   .div-titulo-texto {
     text-align: end;
     display: flex;
     justify-content: right;
+  }
+}
+@media screen and (max-width: 449px) {
+  .div-titulo-texto {
+    text-align: center;
   }
 }
 
@@ -96,6 +95,19 @@
     text-align: end;
   }
 }
+@media screen and (max-width: 599px) and (min-width: 401px) {
+  .titulo-texto {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    text-align: end;
+  }
+}
+@media screen and (max-width: 400px) {
+  .titulo-texto {
+    font-size: 2rem;
+    margin: 0;
+  }
+}
 
 .carousel-titulo {
   font-family: "Antonio", sans-serif;
@@ -108,6 +120,12 @@
     font-size: 1.8rem;
     margin-left: 5rem;
     margin-right: 5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .carousel-titulo {
+    font-size: 1.5rem;
+    margin: 0;
   }
 }
 
@@ -131,6 +149,18 @@
   color: #2b9999;
   background-color: transparent;
 }
+@media screen and (max-width: 500px) {
+  .div-subtitulos a {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 390px) {
+  .div-subtitulos a {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
 
 .btn-close {
   color: white;
@@ -149,6 +179,16 @@
   font-family: "Antonio", sans-serif;
   font-size: 3rem;
   color: #164b4b;
+}
+@media screen and (max-width: 434px) {
+  .subtitulos {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 372px) {
+  .subtitulos {
+    font-size: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 656px) {
@@ -169,6 +209,14 @@
 @media screen and (max-width: 560px) {
   .divs-horarios p {
     font-weight: 200;
+  }
+}
+@media screen and (max-width: 560px) {
+  .divs-horarios p {
+    font-size: 0.8rem;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 0.5rem;
   }
 }
 
@@ -224,6 +272,13 @@
   }
 }
 
+@media screen and (max-width: 400px) {
+  .card-body-pack {
+    padding: 0;
+    margin: 0;
+  }
+}
+
 .card-texto {
   font-family: "Antonio", sans-serif;
   font-size: 1.5rem;
@@ -268,6 +323,11 @@
     font-size: 0.9rem;
   }
 }
+@media screen and (max-width: 452px) {
+  .footer-1 a, .footer-1 i {
+    font-size: 0.8rem;
+  }
+}
 .footer-1 a:hover {
   color: #acd0cf !important;
 }
@@ -292,10 +352,6 @@
   background-color: transparent;
 }
 
-.modal-titulo .modal-texto {
-  font-family: "Open Sans", sans-serif;
-}
-
 .card-rrss {
   text-decoration: none;
   color: white;
@@ -313,6 +369,11 @@
   font-size: 2rem;
   background-color: #acd0cf;
 }
+@media screen and (max-width: 400px) {
+  .card-somos-titulo, a {
+    font-size: 1.5rem;
+  }
+}
 
 .card-somos-parrafo {
   font-family: "Open Sans", sans-serif;
@@ -324,6 +385,15 @@
   color: #2b9999;
   font-size: 2rem;
 }
+@media screen and (max-width: 400px) {
+  .bi-arrow-right-circle {
+    font-size: 1rem;
+  }
+}
+
+.modal-titulo .modal-texto {
+  font-family: "Open Sans", sans-serif;
+}
 
 .modal-titulo {
   background-color: #acd0cf;
@@ -334,6 +404,11 @@
   text-transform: uppercase;
   color: white;
   font-size: 1.5rem;
+}
+@media screen and (max-width: 400px) {
+  .modal-titulo h5 {
+    font-size: 1rem;
+  }
 }
 
 .modal-clases-parrafos {
@@ -418,6 +493,13 @@
   color: #d58256 !important;
 }
 
+@media screen and (max-width: 400px) {
+  .titulo-offcanvas {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -436,6 +518,11 @@
   justify-content: center;
   gap: 2rem;
 }
+@media screen and (max-width: 400px) {
+  .header .nav-logo {
+    flex-direction: column;
+  }
+}
 .header .nav-logo .logo {
   height: 8rem;
 }
@@ -447,6 +534,11 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .header .navbar-nav {
     gap: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header {
+    position: relative;
   }
 }
 
@@ -482,11 +574,16 @@
 .contenedor-cajas {
   padding: 3rem 3rem;
 }
+@media screen and (max-width: 431px) {
+  .contenedor-cajas {
+    padding-left: 2.5rem;
+    padding-right: 1rem;
+  }
+}
 
 .caja-1 {
   background-color: #acd0cf;
 }
-
 .caja-2 {
   background-color: #acd0cf;
 }
@@ -497,10 +594,19 @@
      object-fit: cover;
 }
 
-.div-pack {
-  background-color: #acd0cf;
-  border-radius: 1rem;
-  padding: 1rem;
+.div-card-pack {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width: 600px) {
+  .div-card-pack {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 
 .div-contacto {
@@ -511,6 +617,13 @@
   border: solid 1px #164b4b;
   border-radius: 1rem;
   padding: 3rem;
+}
+@media screen and (max-width: 400px) {
+  .caja-formulario {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+  }
 }
 
 .boton-inscribirme {
@@ -562,5 +675,17 @@
     height: 10rem;
     -o-object-position: top;
        object-position: top;
+  }
+}
+
+.offcanvas-header, .offcanvas-body {
+  background-color: #acd0cf;
+}
+
+@media screen and (max-width: 600px) {
+  .modal-body-servicios {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 }/*# sourceMappingURL=main.css.map */
